@@ -1,0 +1,31 @@
+
+library_creation$ gcc -c exp_trk.c -o exptrk.o
+exp_trk.c: In function ‘startprogram’:
+exp_trk.c:58:17: warning: implicit declaration of function ‘main’ [-Wimplicit-function-declaration]
+   58 |                 main();
+      |                 ^~~~
+exp_trk.c: In function ‘enterexpense’:
+exp_trk.c:86:13: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+   86 |             gets(description);
+      |             ^~~~
+      |             fgets
+library_creation$ ar rcs libexptrk.a exptrk.o
+library_creation$ gcc application.c -L. -lexptrk -o expensetracker
+/usr/bin/ld: ./libexptrk.a(exptrk.o): in function `enterexpense':
+exp_trk.c:(.text+0x27d): warning: the `gets' function is dangerous and should not be used.
+library_creation$ ls
+application.c  education  expensetracker  exp_trk.c  exp_trk.h  exptrk.o  food  libexptrk.a  misc  transport
+library_creation$ ./expensetracker
+
+ Current Date is => 17-07-24
+ *************************WELCOME TO DAILY EXPENSE TRACKER**********************
+ Please select the operation you wish to perform
+ 1. ENTER EXPENSE
+ 2. DISPLAY EXPENSE
+ 3. CHANGE DATE
+ 0. EXIT
+ Your Choice: 0
+
+
+
+
