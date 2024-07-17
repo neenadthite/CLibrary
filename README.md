@@ -1,18 +1,18 @@
 In order to create a library file "libxyz.a" of the functions and link it to your executable C program, please follow the following steps. <br>
 
 Create Header and Source files for the functions, where all the functions declaration should be in the header file and the definations should be in source file<br>
-ex. library_creation$ cat exp_trk.h
-#ifndef EXP_TRK
-#define EXP_TRK
+ex. library_creation$ cat exp_trk.h<br>
+#ifndef EXP_TRK<br>
+#define EXP_TRK<br>
 
-int startprogram();
-int enterexpense();
-int writerecordinfile(int, int, char*);
-int display();
-int findtime();
-int fileinitialization();
-int invalidinput();
-#endif
+int startprogram();<br>
+int enterexpense();<br>
+int writerecordinfile(int, int, char*);<br>
+int display();<br>
+int findtime();<br>
+int fileinitialization();<br>
+int invalidinput();<br>
+#endif<br>
 
 
 Step1: Compile and create output of the library source code file<br>
