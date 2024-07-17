@@ -1,4 +1,4 @@
-In order to create a library file of the functions and link it to your executable C program, please follow the following steps. <br>
+In order to create a library file "libxyz.a" of the functions and link it to your executable C program, please follow the following steps. <br>
 
 
 Step1: Compile and create output of the library source code file<br>
